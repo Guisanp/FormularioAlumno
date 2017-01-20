@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_review"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.guisanp.formulario.ReviewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirma"
+        android:text="@string/confirmar"
+        android:paddingLeft="100dp"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre2"
+        android:text="@string/NoAplica"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/confirma"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre3"
+        android:text="@string/fechaNac"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/nombre2"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre4"
+        android:text="@string/NoAplica"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/nombre3"
+        android:layout_below="@id/nombre2"
+        android:textSize="15dp"/>
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre5"
+        android:text="@string/tel"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/nombre3"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre6"
+        android:text="@string/NoAplica"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/nombre5"
+        android:layout_below="@id/nombre3"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre7"
+        android:text="@string/mail"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/nombre5"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre8"
+        android:text="@string/NoAplica"
+        android:layout_toRightOf="@id/nombre7"
+        android:layout_below="@id/nombre5"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre9"
+        android:text="@string/desc"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/nombre7"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/nombre10"
+        android:text="@string/NoAplica"
+        android:layout_toRightOf="@id/nombre9"
+        android:layout_below="@id/nombre7"
+        android:textSize="15dp"
+        />
+        />
+
+    <Button
+        android:id="@+id/editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre10"
+        android:layout_centerHorizontal="true"
+        android:text="@string/editarDatos"/>
+
+
+</RelativeLayout>

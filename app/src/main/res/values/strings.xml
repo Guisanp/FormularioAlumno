@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="Usuario">Nombre Completo</string>
+    <string name="Telefono">Telefono de contacto</string>
+    <string name="Descripcion">Descripcion Contacto</string>
+    <string name="email">Email</string>
+    <string name="cabcalend">Set Date Fecha de Nacimiento</string>
+    <string name="acceder">OK</string>
+    <string name="cancelar">Cancel</string>
+    <string name="descripcion">Descripcion de contacto</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="confirmar">Confirmar datos</string>
+    <string name="NoAplica">NA</string>
+    <string name="fechaNac">Fecha de nacimiento:</string>
+    <string name="tel">Tel:</string>
+    <string name="mail">Email:</string>
+    <string name="desc">Descripcion:</string>
+    <string name="editarDatos">Editar datos</string>
+</resources>

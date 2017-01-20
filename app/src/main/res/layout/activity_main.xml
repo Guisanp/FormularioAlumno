@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.guisanp.formulario.MainActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@android:drawable/menuitem_background"
+        android:baselineAligned="false">
+        <android.support.design.widget.TextInputEditText
+            android:id = "@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Usuario"
+            android:textColorHint = "@color/entradas"
+            android:focusable = "true"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="0dp"
+            android:layout_height="280dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:id="@+id/lcabcalen"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borde"
+                    android:id="@+id/cabecCalen"
+                    android:text="Set date"
+                    android:textSize="14dp"
+                    android:layout_below="@id/nombre"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borde"
+                    android:id="@+id/cabecCalen2"
+                    android:text="Fecha de nacimiento"
+                    android:paddingLeft="100dp"
+                    android:textSize="14dp"
+                    android:layout_below="@id/nombre"
+                    />
+
+                <DatePicker
+                    android:id="@+id/calendario"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"
+                    android:background="@drawable/borde"
+                    android:headerBackground="@color/colorPrimaryDark"
+
+
+                    android:layout_below="@id/cabecCalen"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                </DatePicker>
+                <RelativeLayout
+                    android:id="@+id/boton1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borde"
+                    android:layout_below="@id/calendario">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button1"
+                        android:background="@android:color/transparent"
+                        android:text="@string/cancelar"
+                        android:layout_below="@id/calendario"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borde"
+                    android:layout_toRightOf="@id/boton1"
+                    android:layout_below="@id/calendario">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button2"
+                        android:paddingTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/acceder"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/Telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/entradas"
+            android:hint="@string/Telefono"
+            android:layout_below="@id/boton1">
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/entradas"
+            android:hint="@string/email">
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/descl"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textColorHint="@color/entradas"
+            android:hint="@string/descripcion">
+        </android.support.design.widget.TextInputEditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/siguiente"
+            android:background="@android:color/transparent"/>
+        </RelativeLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>
